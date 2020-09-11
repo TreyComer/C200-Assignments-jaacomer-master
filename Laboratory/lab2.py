@@ -158,8 +158,8 @@ def whichAssingmentToWorkOn(assingment1,assingment2,assingment3):
 
 
     """
-
     
+
     pass
 
 def didIMakeHonorRoll(gpa,creditHours,lowestGrade):
@@ -170,6 +170,20 @@ def didIMakeHonorRoll(gpa,creditHours,lowestGrade):
     - The lowest grade you can get is a B-
     given a list with the students gpa, the number of credit hours they took and the lowest grade they got
     return wether or not the are on the honor roll"""
+    
+    if gpa >= 3.7
+        return print("You did not make Honor role")
+    else:
+        print("You made Honor role")
+    if creditHours <= 12
+        return print("You did not make Honor role")
+    else: 
+        print("You made Honor role")
+    
+    if lowest Grade >= A+,A,A-,B+,B,B-
+        return print("You did not make Honor role")
+    else:
+        print("you made Honor role")
     pass
 
 def gradeToGetAnA(currentGrade,weightOfFinal):
@@ -179,6 +193,9 @@ def gradeToGetAnA(currentGrade,weightOfFinal):
     the minimum score needed to get a 93% in the class. Given what your grade currently is
     and what percentage of your grade the final is worth, find the minimum score needed for an A
     (It should be in probability terms so 100% would be 1. 50% would be .5, 25% would be .25 etc"""
+    
+    
+    
     pass
 
 
