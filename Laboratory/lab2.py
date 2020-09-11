@@ -194,7 +194,8 @@ def gradeToGetAnA(currentGrade,weightOfFinal):
     and what percentage of your grade the final is worth, find the minimum score needed for an A
     (It should be in probability terms so 100% would be 1. 50% would be .5, 25% would be .25 etc"""
     
-    
+    if currentGrade*weightOfFinal >= 93%
+        return 
     
     pass
 
@@ -206,6 +207,10 @@ def squarea(l,w):
     Input: 2 numbers
     Returns: Number
     """
+
+    sum squarea(1,w):
+        return sum
+
     pass
 
 def midlist(list1):
