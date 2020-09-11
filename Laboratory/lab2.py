@@ -119,7 +119,16 @@ def most_distance(a_time,a_speed,b_time,b_speed):
     Inputs: a_time (hours), a_speed (mph), b_miles (hours), b_speed (mph)
     Returns: 0 if player A drives the farthest, 1 if player B drives the farthest, -1 if equal
     """
-    pass
+    if a_speed/a_time > b_speed/b_time:
+        return 0
+
+    if a_speed/a_time < b_speed/b_time:
+        return 1
+    
+    if a_speed/a_time = b_speed/b_time:
+        return -1
+
+    
 
 def most_speed(a_miles,a_time,b_miles,b_time):
     """
@@ -129,7 +138,16 @@ def most_speed(a_miles,a_time,b_miles,b_time):
     Inputs: a_miles (miles), a_time (hours), b_miles (miles), b_time (hours)
     Returns: 0 if player A drives the fastest, 1 if player B drives the fastest, -1 if equal
     """
-    pass
+
+    if a_miles*a_time > b_miles*b_time:
+        return 0
+
+    if a_miles*a_time < b_miles*b_time:
+        return 1
+
+    if a_miles*a_times = b_miles*b_time:
+        return -1
+    
 
 def whichAssingmentToWorkOn(assingment1,assingment2,assingment3):
     """
@@ -140,6 +158,8 @@ def whichAssingmentToWorkOn(assingment1,assingment2,assingment3):
 
 
     """
+
+    
     pass
 
 def didIMakeHonorRoll(gpa,creditHours,lowestGrade):
