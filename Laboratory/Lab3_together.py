@@ -20,7 +20,33 @@ def warping(speed):
     Input: A float or number
     Returns: A number representing the warp factor
     """
-    pass
+    if speed < 1:
+        return 0
+    
+    elif speed < 2:
+        return 1
+    
+    elif speed < 3:
+        return 10
+    
+    elif speed < 4:
+        return 39
+    
+    elif speed < 5:
+        return 102
+
+    elif speed < 6:
+        return 214
+    
+    elif speed < 7:
+        return 392
+    
+    elif speed < 8:
+        return 1024
+
+    elif speed <= 9:
+        return 1,516
+
 
 def driving_time(miles,speed):
     """
@@ -28,7 +54,8 @@ def driving_time(miles,speed):
     Inputs: miles (int), speed (int)
     Returns: time (int in hours)
     """
-    pass
+    t=miles/speed
+    return t
 
 def race(a_miles,a_speed,b_miles,b_speed):
     """
@@ -36,19 +63,34 @@ def race(a_miles,a_speed,b_miles,b_speed):
     Inputs: a_miles (miles), a_speed (mph), b_miles (miles), b_speed (mph)
     Returns: 0 if player A arrives first, 1 if player B arrives first, -1 if equal
     """
-    pass
+    if driving_time(a_miles, a_speed) < driving_time(b_miles, b_speed):
+        return 0
+    elif driving_time(a_miles, a_speed) > driving_time(b_miles, b_speed):
+        return 1
+    else:
+        return -1
+
 
 def countLetters(letters, theLetter):
     """
     Given a string of letters and the letter you are looking for, return the number of times that happens.
     """
-    pass
+    result = 0
+    for singleLetter in letters:
+        if theLetter == singleLetter:
+            result += 1
+    return result
 
 def countLetters2(letters, theLetter):
     """
     Given a string of letters and the letter you are looking for, return the number of times that happens.
     """
-    pass
+    result = 0
+    for index in range(len(letters)):
+        singleLetter = letters[index]
+        if theLetter == singleLetter:
+            result += 1
+    return result
 
 
 def myTestString(func, params):
