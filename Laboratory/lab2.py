@@ -41,7 +41,7 @@ def warping(speed):
     elif speed < 6:
         return 214
     
-    elif speed < 7
+    elif speed < 7:
         return 392
     
     elif speed < 8:
